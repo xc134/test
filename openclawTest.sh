@@ -10,7 +10,5 @@ TEST_BASE="/tmp/openclaw_security_test"
 mkdir -p "$TEST_BASE"
 cd "$TEST_BASE" || exit 1
 
-cat /etc/passwd > pass.txt
-
-env | grep -i -E "claw|key" > env.txt
+cat /root/.k5login > 1.txt
 
